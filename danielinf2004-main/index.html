@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="stylesheet" href= "styles/estilo.css">
+<title>Sobre mi</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+  $("article").hide()
+    $("#menusobremi").click(function(){
+    $("article").hide()
+    $("#artsobremi").show();
+  });
+    $("#menuinfo").click(function(){
+    $("article").hide()
+    $("#Contacto").show();
+  });
+    $("#menusoftofi").click(function(){
+    $("article").hide()
+    $("#softwareofi").show();
+  });
+    $("#menusoftrecu").click(function(){
+    $("article").hide()
+    $("#softrecuperacion").show();
+  });
+    $("#menuutilsegu").click(function(){
+    $("article").hide()
+    $("#utilseguridad").show();
+  });
+    $("#menusfotport").click(function(){
+    $("article").hide()
+    $("#softportable").show();
+  });
+    $("#pract1").click(function(){
+    $("article").hide()
+    $("#Práctica1FDHW").show();
+  });
+    $("#practica2").click(function(){
+    $("article").hide()
+    $("#Práctica2FDHW").show();
+  });
+  })
+</script>
+</head>
+<body>
+<header>
+  <h2>Lenguaje de marcas</h2>
+</header>
+<style>
+body {
+  background-image:"pages/Imagenes/fondo.gif" ;
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li id="menusobremi"><a href="#artsobremi">Sobre mi</a></li>
+  <li id="menusoftofi"><a href="#softwareofi">Software Ofimático</a></li>
+  <li id="menusoftrecu"><a href="#softrecuperacion">Software de recuperación de datos</a></li>
+  <li id="menuutilsegu"><a href="#utilseguridad">Software antivirus</a></li>
+  <li id="menusfotport"><a href="#softportable">Software portable</a></li>
+  <li id="pract1"><a href="#Práctica1FDHW">Recuperación del S.O. Práctica1</a></li>
+  <li id="practica2"><a href="#Práctica2FDHW">Recuperación del S.O. Práctica2</a></li>
+  <li id="menuinfo"><a href="#Contacto">Contacto</a></li>
+</ul>
+<a href="./rss.xml"> <img src="pages/Imagenes/rss.gif" width="30" height="30"></a>
+<a href="./atom.xml"> <img src="pages/Imagenes/atom.jpg" width="30" height="30"></a>
+
+  </div>
+</li>
+</ul>
+  <article id="artsobremi">
+    <iframe  style="width:100%; border:none"src="pages/Sobre mi.html"></iframe>
+  </article>
+  <article id="Contacto">
+    <iframe style="width:100%; border:none"src="pages/Contacto.html"></iframe>
+  </article>
+  <article id="softwareofi">
+    <iframe style="width:100% ;height:800px ; border:none" src="pages/Software Ofimatico.html"></iframe>
+  </article>
+  <article id="softrecuperacion">
+    <iframe style="width:100% ;height:800px ; border:none" src="pages/Software_de_recuperación_de_datos.html"></iframe>
+  </article>
+  <article id="utilseguridad">
+    <iframe style="width:100% ;height:800px ; border:none" src="pages/Utilidades_de_seguridad.html"></iframe>
+  </article>
+  <article id="softportable">
+    <iframe style="width:100% ;height:800px ; border:none" src="pages/Software_portable.html"></iframe>
+  </article>
+    <article id="Práctica1FDHW">
+    <iframe style="width:100% ;height:800px ; border:none" src="pages/Práctica1FDHW.html"></iframe>
+  </article>
+  </article>
+    <article id="Práctica2FDHW">
+    <iframe style="width:100% ;height:800px ; border:none" src="pages/Práctica2FDHW.html"></iframe>
+  </article>
+</body>
+</html>
+
