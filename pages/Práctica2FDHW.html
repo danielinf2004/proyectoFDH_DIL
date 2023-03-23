@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: ;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<h1>¿Qué es?</h1>
+Samba es un protocolo de comunicaciones para conectar windows con el sistema de archivos linux y de esta forma ver discos de linux o carpetas como unidades de red en windows..
+
+<h1>Procedimiento de la práctica</h1>  
+<p>Con el pendrive de la práctica anterior que tiene clonezilla y una imagen del sistema vamos a enviar una copia a un servidor (que sera un equipo) para enviar la copia allí.
+
+En el servidor vamos a instalar samba con el siguiente comando </p>
+</p><center><img src="Imagenes/Práctica2FDHW/terminalUbuntu.PNG" style="width:743px;height:481px;" ></center>
+
+<p>Y vamos a crear una carpeta compartida en el servidor para ello le ponemos un nombre y luego le damos los permisos necesarios
+
+Creamos una carpeta con un nombre, click derecho y nos vamos a propiedades, y ponemos los mismos permisos que la imagen </p>
+</p><center><img src="Imagenes/Práctica2FDHW/Como.PNG" style="width:532px;height:471px;" ></center>
+
+<p>Y al darle crear comparticipación nos tendrá que aparecer este símbolo al lado de la carpeta </p>
+
+<center><img src="Imagenes/Práctica2FDHW/permisos.PNG "style="width:97px;height:115px;" ></center>
+
+<p>Y ahora iniciamos clonezilla desde el pendrive 
+
+Ponemos los ajustes (idioma,organización del teclado) a gusto y empezamos con clonezilla y seleccionamos la opción de device-image.</p>
+
+<center><img src="Imagenes/Práctica2FDHW/InicioClone.PNG "style="width:809px;height:381px;" ></center>
+
+<p>Luego despues , le damos a samba_server</p>
+<center><img src="Imagenes/Práctica2FDHW/opcionsamba.jpg "style="width:809px;height:381px;" ></center>
+
+<p>Y seleccionamos la opción de dhcp para que proporcione una IP y este el ordenador se pueda comunicar con la dirección IP del servidor
+
+La IP a poner en clonezilla va a ser la IP del servidor.
+En Ubuntu la IP se puede mirar con un comando "hostname -I".
+Y en Windows debes de poner en el símbolo del sistema ipconfig.</p>
+
+<center><img src="Imagenes/Práctica2FDHW/ip.jpg "style="width:809px;height:381px;" ></center>
+
+<p>El dominio de samba no es obligatorio ponerlo , solo dale a enter y pasas a la siguiente.
+
+Después te pedirá un usuario para entrar, pones el nombre del usuario que tenga permisos para poder entrar en la carpeta 
+
+También nos pedirá, dentro de esa carpeta, una ruta para poder guardar la imagen del pendrive 
+
+Nos pedirá un protocolo SMB , si no sabemos que es eso o no sabemos que protocolo se usa, elige auto</p>
+
+<center><img src="Imagenes/Práctica2FDHW/auto.jpg "style="width:809px;height:381px;" ></center>
+
+<p>Usamos el modo de seguridad auto</p>
+<center><img src="Imagenes/Práctica2FDHW/seguridad.jpg "style="width:809px;height:381px;" ></center>
+
+<p>Nos pedirá una contraseña que sera la contraseña del usuario del servidor</p>
+<center><img src="Imagenes/Práctica2FDHW/contraseña.jpg "style="width:809px;height:381px;" ></center>
+
+<p>Después de la contraseña elegimos el modo beginner</p>
+<center><img src="Imagenes/Práctica2FDHW/beginner.jpg "style="width:809px;height:381px;" ></center>
+
+<p>Y seleccionamos la opción de restore disk</p>
+<center><img src="Imagenes/Práctica2FDHW/restored.jpg "style="width:809px;height:381px;" ></center>
+
+<p>Y nos buscara la imagen que hicimos en la práctica 1, deberia de aparecer asi</p>
+<center><img src="Imagenes/Práctica2FDHW/imagen.jpg "style="width:809px;height:381px;" ></center>
+
+<p>Seleccionamos el disco donde vamos a restaurar la imagen </p>
+<center><img src="Imagenes/Práctica2FDHW/particiones.jpg "style="width:809px;height:381px;" ></center>
+
+<p>Nos pregunta si querremos guardar lo almacenado actualmente (en el ordenador) y transformarlo en una imagen (vamos, una copia de seguridad)</p>
+<center><img src="Imagenes/Práctica2FDHW/sip.jpg "style="width:809px;height:381px;" ></center>
+
+<p>Elegimos el disco local como origen, donde se va a "descomprimir" la imagen y va a poder usarse</p>
+<center><img src="Imagenes/Práctica2FDHW/local.jpg "style="width:809px;height:381px;" ></center>
+
+<p>Por ultimo nos pregunta si querremos comprobar y reparar el sistema de archivos antes de grabarlo. Si seleccionas que si, el tiempo del proceso se va a incrementar,( y mucho)</p>
+<center><img src="Imagenes/Práctica2FDHW/aumento.jpg "style="width:809px;height:381px;" ></center>
+
+<p>Y ya estaría, solo quedaría esperar (mucho tiempo) y ver si da algún error.</p>
+<center><img src="Imagenes/Práctica2FDHW/fin.jpg "style="width:809px;height:381px;" ></center>
+
+<h1>Conclusión</h1>
+<p>Esta practica ha sido mucho mas larga y difícil que la anterior, sobre todo por los errores que nos aparecían </p>
+
+</body>
+</head>
+</html>
